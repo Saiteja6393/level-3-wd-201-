@@ -16,7 +16,7 @@ const todoList = () => {
       var a;
       var overdue_lst=[];
       for(a in all){
-        if(all(a).dueDate<today){
+        if(all[a].dueDate<today){
             overdue_lst.push(all[a]);
         }
       }
@@ -32,7 +32,7 @@ const todoList = () => {
       var a;
       var dueToday_lst=[];
       for(a in all){
-        if(all(a).dueDate===today){
+        if(all[a].dueDate===today){
             dueToday_lst.push(all[a]);
         }
       }
@@ -48,7 +48,7 @@ const todoList = () => {
       var a;
       var dueLater_lst=[];
       for(a in all){
-        if(all(a).dueDate>today){
+        if(all[a].dueDate>today){
             dueLater_lst.push(all[a]);
         }
       }
